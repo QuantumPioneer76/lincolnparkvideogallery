@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: "Russo One", sans-serif; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-image: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700); */
+    background-color:white;
+}
+main div{
+    color: red;
+    text-align: center;
+}
+header,footer{
+    width: 100vw;
+    color: red;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: white;
+    margin-bottom: 2em;
+}
+header img{
+    max-width: 250px;
+    padding-top: 3em;
+    padding-bottom: 0em;
+}
+header h2{
+    font-size: 250%;
+    color: red;
+    padding-left: 1.7em;
+}
+nav{
+    flex-basis: 20%;
+}
+main{
+    flex-basis: 65%;
+}
+nav ul{
+    position: sticky;
+    top: 50px;
+    list-style-type: none;
+    width: 90%;
+}
+nav li{
+    margin-bottom: 1em;
+}
+nav a {
+    display: block;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 1em 0.5em;
+    border: 2px ridge red;
+    border-radius: 10px;
+    transition: ease-in-out 300ms;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+}
+article{
+    margin-bottom: 2em;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer{
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: red;
+}
+/* ----------Media Queries---------- */
+@media (max-width: 600px){
+    nav{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        text-align: center;
+    }
+    main{
+        flex-basis: 100%;
+    }
+    .videowrapper{
+        border: none;
+    }
+}
